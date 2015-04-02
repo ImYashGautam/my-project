@@ -1,0 +1,57 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="Index" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <link href="StyleSheet1.css" rel="stylesheet" />
+    
+    <title>Say!Music</title>
+    <link rel="icon" href="Images/Iconshock-Dj-Headset.ico" />
+</head>
+<body>
+    <header>
+   <a href="Index.aspx"> <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.PNG" Width="200px" Height="88px" /></a>
+    <table>
+        <tr>
+              <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/TITLE.PNG" Width="650px" Height="88px" />
+         
+        </tr>
+    </table>
+    <form id="form1" runat="server">
+    
+        <a href="http://www.facebook.com" target="_blank">
+            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/facebook.png" width="850px" Height="40px"/>
+        </a>
+                <a href="English.aspx" target="_self"> <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/button_eng.png" CssClass="Image"/></a>
+                <a href="Hindi.aspx" target="_self"> <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/button_hin.png" CssClass="Image" /></a>
+                <a href="Punjabi.aspx" target="_self"> <asp:Image ID="Image6" runat="server" ImageUrl="~/Images/button_pun.png" CssClass="Image" /></a>
+                <a href="Remix.aspx" target="_self"> <asp:Image ID="Image7" runat="server" ImageUrl="~/Images/button_rem.png" CssClass="Image" /></a>
+                <a href="Mashup.aspx" target="_self"> <asp:Image ID="Image8" runat="server" ImageUrl="~/Images/button_map.png" CssClass="Image" /></a>
+        </header>
+    <div id="Sidebar1" style="margin-top:20px; margin-left:4px; width:215px; height:initial;border:solid; border-color:black">
+        
+            <a href="Index.aspx" target="_self"><asp:Image ID="Image9" runat="server" ImageUrl="~/Images/box_home.png" /></a><br />
+            <a href="Lyrics.aspx" target="_self"><asp:Image ID="Image10" runat="server" ImageUrl="~/Images/box_lyrics.png" /></a><br />
+            <a href="DiscoGraphy.aspx" target="_self"><asp:Image ID="Image11" runat="server" ImageUrl="~/Images/box_dg.png" /></a><br />
+            <a href="Videos.aspx" target="_self"><asp:Image ID="Image12" runat="server" ImageUrl="~/Images/box_videos.png" /></a><br />
+            <a href="ChatRoom.aspx" target="_blank"><asp:Image ID="Image13" runat="server" ImageUrl="~/Images/box_feed.png" /></a><br />       
+                
+    </div>   
+    <section style="vertical-align:middle">
+        <p><h2>Newly Launched...</h2></p>
+    </section>
+    <div id="Sidebar2">
+       <p>Song Of The Day</p>
+
+    </div>
+    <footer style="text-align:right">
+        Yash Gautam<br />
+        Copyrights © 2015 Say!Music.Com, All Right Reserved
+        
+    </footer>
+    </form>
+</body>
+</html>
